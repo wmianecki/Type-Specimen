@@ -1,32 +1,15 @@
 
-var amzn = ["test1", "test2", "test3"]
+var rays = ["FIRED FOR ORGANIZING A UNION", "support amazon workers", "amazon workers <br> shut it down<br>clean it up<br> unionize", "if we are essential treat us as such", "fired for organizing a union", "unionize amazon solidarity with bessemer workers"]
 
-function textsResult() {
+function rayResult() {
 
-    document.getElementById("result").innerHTML = amzn[Math.floor(Math.random()*amzn.length)];
-    
-  }
+  document.getElementById("result").innerHTML = rays[Math.floor(Math.random()*rays.length)];
   
-  textResult ();
-  document.getElementById("button").onclick = textResult;
+}
+
+rayResult ();
+document.getElementById("button").onclick = rayResult;
 
 
-
-
-
-
-function myFunction() {
-	var element = document.body;
-	element.classList.toggle("dark-mode");
-  }
-
-
-  const toggleTag = document.querySelector("a.toggle-nav");
-  const mainTag = document.querySelector("main");
-  
-  toggleTag.addEventListener("click", function () {
-	mainTag.classList.toggle("open")
-	
-  });
 
   
