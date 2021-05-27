@@ -1,0 +1,176 @@
+
+
+@font-face {
+    font-family: 'AmazonFont';
+    src: url('fonts/AmazonFontGX.ttf') format('truetype');
+  }
+
+  :root{
+	--wght: 100;
+	/* --wdth: 100;
+	--XHGT: 500; */
+
+
+}
+
+
+.mirror, .mirror *{
+	font-variation-settings: 'wght' var(--wght);
+}
+
+
+  .my-variable-text {
+    font-family: "AmazonFont";
+    font-size:6vw;
+    /* color: blue; */
+	  line-height: 0.9;
+	  text-align: left;
+    transition: font-variation-settings 0.6s ease;
+    animation-name: amzn-animation;
+    animation-duration: 8s;
+    animation-direction: alternate, reverse, normal;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+    border-width: 6px;
+    border-style: dashed;
+    border-color: orangered;
+    text-transform: uppercase;
+    padding: 1em;
+    line-height: 1.3;
+    margin: 40px;
+  }
+
+
+
+  @keyframes amzn-animation {
+    from {
+      font-variation-settings: "wght" 300;
+    }
+    to { 
+      font-variation-settings: "wght" 900;
+    }
+  }
+
+  body {
+    background-color: whitesmoke;
+    color: black;
+    overflow: scroll;
+    min-height: 100vh;
+    margin: 0;
+  }
+  
+  .dark-mode {
+    background-color: blue;
+    color: whitesmoke;
+  }
+
+/* 
+.mirror-regular {
+    font-variation-settings: "wght" 10;
+}
+
+.mirror-medium {
+    font-variation-settings: "wght" 50;
+}
+
+.mirror-broken {
+    font-variation-settings: "wght" 100;
+} */
+
+
+/* .container {
+    overflow: hidden;
+    padding: 0px;
+    margin: 0;
+    background-color: whitesmoke;
+} */
+
+
+
+
+h1 {
+    font-family: 'AmazonFont'; 
+    font-variation-settings: 'wght' 10;
+    font-weight: 10;
+    font-size: 80px;
+}
+
+h2 {
+    font-family: 'Space Mono', monospace;
+    /* color: blue; */
+    font-size: 42px;
+    font-weight: 200;
+    padding-left: 20px;
+}
+
+
+
+
+
+button{
+	border-radius: 50%;
+	border: .5px dotted white;
+  background-color: blue;
+	padding: 1em;
+  right: 1.5em;
+  position: absolute;
+  top: 3em;
+}
+
+button:hover{
+	color: blue;
+	cursor: pointer;
+} 
+
+.about {
+  background-color: yellowgreen;
+}
+
+
+
+/* ABOUT  */
+
+
+/* nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 240px;
+  height: 100vh;
+  background-color: seagreen;
+  font-family: 'Space Mono', monospace;
+  font-size: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+nav a {
+  text-decoration: none;
+  margin: 5px 32px;
+  
+}
+
+a {
+ 
+  text-decoration: none;
+  font-family: 'Space Mono', monospace;
+  
+}
+
+a:hover {
+  color: seagreen;
+}
+
+
+main {
+  position: relative;
+  z-index: 1;
+  min-height: 90vh;
+  padding-left: 50;
+
+}
+
+main.open {
+  transform: translate(240px, 0);
+} */
